@@ -1,0 +1,47 @@
+.inline-block {
+	display: inline-block;	
+}
+
+#tree-container {
+	display: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+i.fa-folder, .title-text {
+	cursor: pointer;
+}
+
+.title-block .btn {
+	display: none;
+	padding: 2px 5px;
+	margin-left: 5px;
+	font-size: 0.6em;
+}
+
+.title-block:hover .btn {
+	display: inline-block;
+}
+
+.path-text {
+	display: none;	
+	margin-left: 5px;
+	font-size: 0.8em;
+}
+.title-block:hover .path-text {
+	display: inline-block;	
+}
+
+#searchBar .fa-spinner {
+	display: none;
+}
+
+#resultList li {
+	padding-bottom: 15px;
+}
+#resultList li small {
+	font-weight: lighter !important;
+	font-style: normal;
+}
