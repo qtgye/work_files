@@ -90,6 +90,7 @@ var Tree = (function () {
 			// render each result item
 			result.forEach(function (item) {
 
+				// wrap the matched string in a span
 				var text = item.name.replace(new RegExp(searchText,'gi'),function (x) {				
 								return '<span class="text-success">'+x+'</span>';
 							});
