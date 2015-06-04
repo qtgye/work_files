@@ -59,19 +59,19 @@ var Tree = (function () {
 			  	// fIcon.toggleClass('fa-folder-open');
 			});
 			contentBlock
-				.on('shown.bs.collapse',function () {
+				.on('shown.bs.collapse',function (e) {
 					fIcon.addClass('fa-folder-open');
+					e.stopPropagation();
 				})
-				.on('hidden.bs.collapse',function () {
+				.on('hidden.bs.collapse',function (e) {
 					fIcon.removeClass('fa-folder-open');
+					e.stopPropagation();
 				})
 
 
 			return div;			
 
-		}	
-
-
+		}
 
 
 		container.empty().append(listDir(tree));
