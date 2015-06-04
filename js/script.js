@@ -53,16 +53,26 @@ var Tree = (function () {
 				}
 			});
 
-			// event handler for collapse toggle
+			// // event handler for collapse toggle
 			fIcon.add(titleSpan).on('click', function () {		  	
 			  	contentBlock.collapse('toggle');
-			  	fIcon.toggleClass('fa-folder-open');
+			  	// fIcon.toggleClass('fa-folder-open');
 			});
+			contentBlock
+				.on('shown.bs.collapse',function () {
+					fIcon.addClass('fa-folder-open');
+				})
+				.on('hidden.bs.collapse',function () {
+					fIcon.removeClass('fa-folder-open');
+				})
 
 
 			return div;			
 
 		}	
+
+
+
 
 		container.empty().append(listDir(tree));
 
@@ -214,7 +224,8 @@ $(document).ready(function () {
 		Tree.render();
 	}).trigger('click');
 
-	
+	// initialise Bootstrap tooltip
+	$('[data-toggle="tooltip"]').tooltip();
 
 
 })

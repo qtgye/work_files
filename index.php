@@ -20,7 +20,7 @@
 			<div class="panel-heading">
 				<div class="row">
 					<div class="col-xs-8">
-						<h3>Work Files Tree <span class="btn btn-default text-muted" data-toggle="modal" data-target="#settingModal"><i class="fa fa-gear"></i></span></h3>
+						<h3>Work Files Tree <span class="btn btn-default text-muted" data-toggle="modal" data-target="#settingModal"><i class="fa fa-gear" data-toggle="tooltip" data-placement="bottom" title="settings"></i></span></h3>
 					</div>
 					<div class="col-xs-4">
 						<div class="collapse" id="searchBar">
